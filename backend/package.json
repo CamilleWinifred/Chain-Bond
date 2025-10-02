@@ -1,0 +1,30 @@
+{
+  "name": "chainbond-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf artifacts cache deployments types",
+    "build": "hardhat compile",
+    "compile": "hardhat compile",
+    "node": "hardhat node",
+    "deploy:localhost": "hardhat deploy --network localhost",
+    "deploy:sepolia": "hardhat deploy --network sepolia",
+    "export-abi": "node ./scripts/export-abi-addresses.mjs"
+  },
+  "dependencies": {
+    "@fhevm/solidity": "^0.8.0"
+  },
+  "devDependencies": {
+    "@fhevm/hardhat-plugin": "^0.1.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.6",
+    "@typechain/hardhat": "^9.1.0",
+    "ethers": "^6.13.4",
+    "hardhat": "^2.22.10",
+    "hardhat-deploy": "^0.12.4",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
+
+
