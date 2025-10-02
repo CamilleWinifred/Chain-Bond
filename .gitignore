@@ -1,0 +1,38 @@
+﻿# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+/dist/
+/build/
+/coverage/
+
+# Next.js
+/frontend/.next/
+/frontend/out/
+/frontend/.vercel/
+/frontend/.turbo/
+
+# Hardhat
+/backend/artifacts/
+/backend/cache/
+
+# Project specific
+/backend/node_modules/
+/frontend/node_modules/
