@@ -1,0 +1,30 @@
+{
+  "name": "chainbond-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf .next",
+    "dev": "npm run clean && npm run genabi && next dev --turbopack",
+    "prebuild": "rimraf out && npm run genabi",
+    "build": "next build",
+    "build:static": "npm run build",
+    "start": "next start",
+    "genabi": "node ./scripts/genabi.mjs"
+  },
+  "dependencies": {
+    "@zama-fhe/relayer-sdk": "0.2.0",
+    "clsx": "^2.1.1",
+    "ethers": "^6.13.4",
+    "idb": "^8.0.3",
+    "next": "^15.4.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@fhevm/mock-utils": "0.1.0",
+    "@types/react": "19.2.2",
+    "eslint": "^9",
+    "rimraf": "^6.0.1",
+    "typescript": "^5"
+  }
+}
